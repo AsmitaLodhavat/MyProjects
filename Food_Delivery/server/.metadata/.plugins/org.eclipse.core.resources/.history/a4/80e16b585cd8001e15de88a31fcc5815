@@ -1,0 +1,74 @@
+package com.asmita.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.asmita.dto.RestaurantDto;
+import com.asmita.model.Restaurant;
+import com.asmita.model.User;
+import com.asmita.repository.RestaurantRepository;
+import com.asmita.request.CreateRestaurantRequest;
+
+@Service
+public class RestaurantServiceImp implements RestaurantService{
+	
+	@Autowired
+	private RestaurantRepository restaurantrepository;
+
+	@Override
+	public Restaurant createRestaurant(CreateRestaurantRequest req, User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Restaurant updateRestaurant(Long restaurantId, CreateRestaurantRequest updatedRestaurant) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteRestaurant(Long restaurantId) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Restaurant> getAllRestaurant() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Restaurant> searchRestaurant() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Restaurant findRestaurantById(Long id) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Restaurant getRestaurantByUserId(Long userId) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public RestaurantDto addToFavorites(Long restaurantId, User user) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Restaurant updateRestaurantStatus(Long id) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

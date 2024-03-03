@@ -1,0 +1,10 @@
+package com.asmita.request;
+
+import com.asmita.model.Address;
+
+public class OrderRequest {
+	
+	private Long restaurantId;
+	private Address deliveryAddress;
+
+}

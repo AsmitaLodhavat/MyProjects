@@ -1,0 +1,5 @@
+package com.asmita.dto;
+
+public class RestaurantDto {
+
+}

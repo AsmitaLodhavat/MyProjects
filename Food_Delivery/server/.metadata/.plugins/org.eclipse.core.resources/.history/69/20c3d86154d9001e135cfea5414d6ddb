@@ -1,0 +1,43 @@
+package com.asmita.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.asmita.model.IngredientCategory;
+import com.asmita.request.IngredientCategoryRequest;
+import com.asmita.service.IngredientsService;
+
+@RestController
+@RequestMapping("/api/admin/ingredients")
+public class IngredientController {
+	
+	@Autowired
+	private IngredientsService ingredientsService;
+	
+	@PostMapping("/category")
+	public ResponseEntity<IngredientCategory> createIngredientCategory(
+			@RequestBody IngredientCategoryRequest req
+			) throws Exception {
+		
+		IngredientCategory item = ingredientsService.createIngredientCategory(req.getName(), req.getRestaurantId());
+		return new ResponseEntity<>(item, HttpStatus.CREATED);
+		
+	}
+	
+	@PostMapping()
+	public ResponseEntity<IngredientCategory> createIngredientItem(
+			@RequestBody IngredientCategoryRequest req
+			) throws Exception {
+		
+		IngredientCategory item = ingredientsService.createIngredientCategory(req.getName(), req.getRestaurantId());
+		return new ResponseEntity<>(item, HttpStatus.CREATED);
+		
+	}
+	
+
+}

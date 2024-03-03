@@ -1,0 +1,5 @@
+package com.asmita.request;
+
+public class OrderRequest {
+
+}

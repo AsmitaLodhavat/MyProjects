@@ -1,0 +1,5 @@
+package com.asmita.config;
+
+public class AppConfig {
+
+}
