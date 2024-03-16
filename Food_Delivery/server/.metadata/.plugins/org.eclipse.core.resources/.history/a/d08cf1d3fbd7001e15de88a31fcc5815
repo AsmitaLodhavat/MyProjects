@@ -1,5 +1,0 @@
-package com.asmita.repository;
-
-public interface AddressRepository {
-
-}
