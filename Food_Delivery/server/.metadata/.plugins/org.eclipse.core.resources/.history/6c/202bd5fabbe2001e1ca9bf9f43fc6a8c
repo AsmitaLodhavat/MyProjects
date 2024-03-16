@@ -1,0 +1,5 @@
+package com.asmita.repository;
+
+public interface PasswordResetTokenRepository {
+
+}
